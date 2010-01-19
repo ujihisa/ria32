@@ -135,7 +135,6 @@ class Ria32
       when :call
         case mne
         when 'printf'
-          p [@register, @memory]
           tmp = @register['%esp']
           args = []
           str = stack_pop
